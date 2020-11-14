@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var lb1: UILabel!
     let message = "Hello Git!"
 
     override func viewDidLoad() {
@@ -16,7 +17,9 @@ class ViewController: UIViewController {
         
         print(message)
         print("something new")
-        print(reverse(text: "stressed"))
+        let revWord = reverse(text: "stressed")
+        print(revWord)
+        lb1.text = revWord
     }
     
     func reverse(text: String) -> String {
