@@ -15,6 +15,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         print(message)
+        print("something new")
+        print(reverse(text: "stressed"))
+    }
+    
+    func reverse(text: String) -> String {
+        return String(text.reversed())
     }
 
 
